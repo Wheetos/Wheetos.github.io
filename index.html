@@ -14,11 +14,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/hamburgers.css" rel="stylesheet">
+    <script src="/java.js"></script>
+</head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Julio Andrade-Jimenez</a>
-        <nav class="navbar">
+        <div class="logo-container">
+            <a href="#" class="logo">Julio Andrade-Jimenez</a>
+                            <!-- Hamburger Menu -->
+                    <button class="hamburger hamburger--slider" id="button-begone" type="button" onclick="Hamburger()">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+        </div>   
+        <nav class="navbar">         
             <a href="#about-me-header">About Me</a>
             <a href="#skills-header">Skills</a>
             <a href="#projects-header">Projects</a>
@@ -86,7 +97,7 @@
     <nav id="footer-icon">
         <a href="https://www.linkedin.com/in/julio-andrade-jimenez-847bb917b/" target="'_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         <a href="https://github.com/Wheetos" target="_blank"><i class="fa fa-github"></i></a>
-        <a href="mailto:julioandrade20943@gmail.com">Email me</a>
+        <a href="mailto:julioandrade20943@gmail.com">Email</a>
     </nav>
     </div>
 </footer>
