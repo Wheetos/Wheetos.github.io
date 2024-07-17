@@ -8,19 +8,19 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/photos/favicon_io/apple-touch-icon.png"
+      href="/assets/favicon_io/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/photos/favicon_io/favicon-32x32.png"
+      href="/assets/favicon_io/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/photos/favicon_io/favicon-16x16.png"
+      href="/assets/favicon_io/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="/styles/style.css" />
@@ -36,7 +36,6 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/styles/hamburgers.css" rel="stylesheet" />
-    <script src="/java.js"></script>
   </head>
   <body>
     <header class="header">
@@ -44,10 +43,9 @@
         <a href="#" class="logo">Julio Andrade-Jimenez</a>
         <!-- Hamburger Menu -->
         <button
-          class="hamburger hamburger--slider"
-          id="button-begone"
+          class="hamburger hamburger--collapse"
           type="button"
-          onclick="Hamburger()"
+          id="button-begone"
         >
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
@@ -60,61 +58,72 @@
         <a href="#projects-header">Projects</a>
       </nav>
     </header>
-    <div class="hero-container">
-      <div id="hero-text">
-        <h3 class="hero-header">Web developer student</h3>
-        <h2 id="hero-header-one">Hello! My name is Julio</h2>
-        <h4 id="hero-header-two">
-          I'm interested in becoming a front-end developer.
-        </h4>
-        <nav id="nav-icon">
-          <a
-            href="https://www.linkedin.com/in/julio-andrade-jimenez-847bb917b/"
-            target="'_blank"
-            ><i class="fa fa-linkedin" aria-hidden="true"></i
-          ></a>
-          <a href="https://github.com/Wheetos" target="_blank"
-            ><i class="fa fa-github"></i
-          ></a>
-          <a href="./assets/Resume.pdf" target="_blank">Resume</a>
-        </nav>
+    <div class="flexbox">
+      <div class="hero-container">
+        <div>
+          <h3 class="hero-header">Web developer student</h3>
+          <h2 id="hero-header-one">Hello! My name is Julio</h2>
+          <h4 id="hero-header-two">
+            I'm interested in becoming a front-end developer.
+          </h4>
+          <nav id="nav-icon">
+            <a
+              href="https://www.linkedin.com/in/julio-andrade-jimenez-847bb917b/"
+              target="'_blank"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+            <a href="https://github.com/Wheetos" target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a href="./assets/Resume.pdf" target="_blank">Resume</a>
+          </nav>
+        </div>
+        <div>
+          <img
+            src="/assets/R5C_7888.jpg"
+            alt="Julio's portrait"
+            id="portrait"
+          />
+        </div>
       </div>
-      <div id="hero-img">
-        <img src="/assets/R5C_7888.jpg" alt="Julio's portrait" id="portrait" />
+      <div class="wrapper">
+        <div class="about-wrapper" id="about-me-header">
+          <img src="/assets/selfie.jpg" alt=" " id="about-me-pic" />
+          <div class="about-wrapper-header">
+            <h1>About Me</h1>
+            <p>
+              When I first started college at Dutchess Community College, I knew
+              that I wanted to major in a computer related field, but I didn't
+              know exactly which one. After a troubling two years, I changed
+              majors from computer science to computer information systems. I
+              took a couple of HTML and CSS classes and I enjoyed designing and
+              creating websites. I then transferred over to the University at
+              Albany where I am currently a senior studying informatics with a
+              concentration in interactive user experience. In addition to my
+              skills in web development, I also have prior experience in the IT
+              field and as a resident assistant.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="wrapper">
-      <h1 id="about-me-header">About Me</h1>
-      <div class="about-wrapper">
-        <img src="/assets/selfie.jpg" alt=" " id="about-me-pic" />
-        <p>
-          When I first started college at Dutchess Community College, I knew
-          that I wanted to major in a computer related field, but I didn't know
-          exactly which one. After a troubling two years, I changed majors from
-          computer science to computer information systems. I took a couple of
-          HTML and CSS classes and I enjoyed designing and creating websites. I
-          then transferred over to the University at Albany where I am currently
-          a senior studying informatics with a concentration in interactive user
-          experience. In addition to my skills in web development, I also have
-          prior experience in the IT field and as a resident assistant.
-        </p>
+      <div class="wrapper">
+        <div class="skills-wrapper" id="skills-header">
+          <h1>Skills</h1>
+          <p>Below are mark-up languages that I know of:</p>
+          <div class="skills-wrapper-img">
+            <img src="/assets/html-logo.png" alt=" " class="skills-img" />
+            <img src="/assets/CSS-logo.png" alt=" " class="skills-img" />
+            <img src="/assets/JS-logo.png" alt=" " class="skills-img" />
+            <img src="/assets/Csharp-logo.png" alt=" " class="skills-img" />
+            <img src="/assets/react-logo.png" alt=" " class="skills-img" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="wrapper">
-      <h1 id="skills-header">Skills</h1>
-      <div class="skills-wrapper">
-        <p>Below are mark-up languages that I know of:</p>
-        <img src="/photos/html-logo.png" alt=" " class="skills-img" />
-        <img src="/photos/CSS-logo.png" alt=" " class="skills-img" />
-        <img src="/photos/JS-logo.png" alt=" " class="skills-img" />
-        <img src="/photos/Csharp-logo.png" alt=" " class="skills-img" />
-        <img src="/photos/react-logo.png" alt=" " class="skills-img" />
-      </div>
-    </div>
-    <div class="wrapper">
-      <h1 id="projects-header">Projects</h1>
-      <div class="project-wrapper">
-        <p>I'm currently working on projects. Please check back later.</p>
+      <div class="wrapper">
+        <div class="project-wrapper" id="projects-header">
+          <h1>Projects</h1>
+          <p>I'm currently working on projects. Please check back later.</p>
+        </div>
       </div>
     </div>
     <footer>
@@ -134,5 +143,13 @@
         </nav>
       </div>
     </footer>
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      var navbar = document.querySelector(".navbar");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        navbar.classList.toggle("navbar-active");
+      });
+    </script>
   </body>
 </html>
