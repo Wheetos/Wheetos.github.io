@@ -23,6 +23,9 @@ body {
   background: #1b1b68;
 }
 
+.header-container {
+  display: flex;
+}
 .logo {
   font-size: 32px;
   color: #fff;
@@ -193,17 +196,24 @@ body {
   visibility: hidden;
 }
 
+.sidebar,
+.sidebar-hidden {
+  visibility: hidden;
+}
+
 /* This applies when the screen size is 480px or less */
 @media only screen and (max-width: 480px) {
   .header {
     padding: 0px;
     flex-wrap: wrap;
     top: -1px;
+    background-color: transparent;
   }
   .header-container {
     width: 100%;
     display: flex;
     background-color: #1b1b68;
+    padding: 10px 0 20px 2px;
   }
 
   .logo {
@@ -329,6 +339,11 @@ body {
     width: 85%;
   }
 
+  .footer {
+    padding: 20px 0px 20px 0px;
+    font-size: 1.2rem;
+  }
+
   #footer-icon a {
     font-size: 22px;
   }
@@ -338,40 +353,58 @@ body {
   }
 
   .sidebar {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    background-color: #1b1b68;
+    transform: translateX(30rem);
     visibility: hidden;
-    height: 30px;
+    position: fixed;
   }
 
   .sidebar-active {
     visibility: visible;
-    transform: translateY(30px);
-    position: relative;
-    transition: transform 400ms ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #474799;
+    height: 100dvh;
+    transition: 400ms ease-out;
+    position: fixed;
+    top: 0rem;
+    z-index: -1;
+  }
+
+  .sidebar-hidden {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #474799;
+    height: 100dvh;
+    transform: translateX(30rem);
+    transition: transform 400ms ease-in;
+    position: fixed;
+    top: 0rem;
+    z-index: -1;
+  }
+
+  body:has(.sidebar-active) {
+    overflow: hidden;
   }
 
   .sidebar-mobile {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     width: 100%;
-    position: absolute;
-    z-index: 1;
-    background-color: #1b1b68;
+    font-size: 4rem;
+    font-weight: 200;
+    text-shadow: 2px 2px black;
+    padding-bottom: 21rem;
   }
 
   .sidebar-mobile a {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    background-color: #1b1b68;
+    justify-content: center;
     color: #eee;
     text-decoration: none;
-    font-size: 1.5rem;
-    padding: 10px;
   }
 }
