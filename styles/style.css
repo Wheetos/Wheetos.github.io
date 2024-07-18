@@ -6,7 +6,7 @@
 }
 
 body {
-  min-height: 100vh;
+  height: auto;
   background-color: #eee;
 }
 
@@ -203,11 +203,21 @@ body {
 
 /* This applies when the screen size is 480px or less */
 @media only screen and (max-width: 480px) {
+  body {
+    height: 100vh;
+  }
+
+  @supports (height: 100dvh) {
+    body {
+      height: 100dvh;
+    }
+  }
   .header {
     padding: 0px;
     flex-wrap: wrap;
     top: -1px;
     background-color: transparent;
+    position: fixed;
   }
   .header-container {
     width: 100%;
@@ -255,6 +265,7 @@ body {
 
   .hero-container {
     flex-direction: column-reverse;
+    margin-top: 13rem;
   }
 
   #hero-text {
