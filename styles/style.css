@@ -374,29 +374,29 @@ body {
     visibility: visible;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     background-color: #474799;
     height: 100dvh;
     transition: 400ms ease-out;
-    position: fixed;
-    top: 0rem;
-    z-index: -1;
+    position: absolute;
+    top: 5.5rem;
+    z-index: 0;
   }
 
   .sidebar-hidden {
     visibility: visible;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     background-color: #474799;
     height: 100dvh;
     transform: translateX(30rem);
     transition: transform 400ms ease-in;
-    position: fixed;
-    top: 0rem;
-    z-index: -1;
+    position: absolute;
+    top: 5.5rem;
+    z-index: 0;
   }
 
   body:has(.sidebar-active) {
@@ -410,7 +410,7 @@ body {
     font-size: 4rem;
     font-weight: 200;
     text-shadow: 2px 2px black;
-    padding-bottom: 21rem;
+    background-color: ;
   }
 
   .sidebar-mobile a {
